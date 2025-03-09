@@ -31,7 +31,7 @@ def main():
     
     for cve in cves:
         print(cve.get("_source", {}).get("id", "Unknown ID"), "-", cve.get("_source", {}).get("description", "No description"))
-        time.sleep(1)  # Avoid excessive API requests
+        time.sleep(1) 
 
 if __name__ == "__main__":
     main()
